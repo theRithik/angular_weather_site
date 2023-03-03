@@ -1,0 +1,54 @@
+<div class="container-fluid">
+<div class="col-md-4" >
+    <input type="text" class="form-control" [(ngModel)]="cityname">
+</div>
+<button class="btn btn-primary" (click)="onSubmit()">Forcaste</button>
+<div class="heading">
+    <div class="card ">
+        <div class="card-body">
+          {{weatherHtml?.city.name}}, {{weatherHtml?.city.country}},Weather Forcaste
+        </div>
+      </div>
+      <div class="card text-muted text-center" style="width: 12rem; display: inline-block; margin-left: 15px;">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 ">{{weatherHtml?.list[0].weather[0].description}}</h6>
+          <img src="assets/images/{{weatherHtml?.list[0].weather[0].main}}.png" alt={{weatherHtml?.list[0].weather[0].description}} style="width:100px">
+          <h3 class="card-text">{{weatherHtml?.list[0].main.temp |number:'1.0-0'}}</h3>
+          <p class="card-text">{{weatherHtml?.list[0].dt_txt|date:'EEE, MMM d'}}</p>
+        </div>
+      </div>
+      <div class="card text-muted text-center" style="width: 12rem; display: inline-block; background-color: rgb(205, 198, 198); ">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 ">{{weatherHtml?.list[8].weather[0].description}}</h6>
+          <img src="assets/images/{{weatherHtml?.list[8].weather[0].main}}.png" alt={{weatherHtml?.list[0].weather[0].description}} style="width:100px">
+          <h3 class="card-text">{{weatherHtml?.list[8].main.temp |number:'1.0-0'}}</h3>
+          <p class="card-text">{{weatherHtml?.list[8].dt_txt|date:'EEE, MMM d'}}</p>
+        </div>
+      </div>
+      <div class="card text-muted text-center" style="width: 12rem; display: inline-block; ">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 ">{{weatherHtml?.list[16].weather[0].description}}</h6>
+          <img src="assets/images/{{weatherHtml?.list[16].weather[0].main}}.png" alt={{weatherHtml?.list[0].weather[0].description}} style="width:100px">
+          <h3 class="card-text">{{weatherHtml?.list[16].main.temp|number:'1.0-0'}}</h3>
+          <p class="card-text">{{weatherHtml?.list[16].dt_txt|date:'EEE, MMM d' }}</p>
+        </div>
+      </div>
+      <div class="card text-muted text-center" style="width: 12rem; display: inline-block; background-color: rgb(205, 198, 198);">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 ">{{weatherHtml?.list[24].weather[0].description}}</h6>
+          <img src="assets/images/{{weatherHtml?.list[24].weather[0].main}}.png" alt={{weatherHtml?.list[0].weather[0].description}} style="width:100px">
+          <h3 class="card-text">{{weatherHtml?.list[24].main.temp |number:'1.0-0'}}</h3>
+          <p class="card-text">{{weatherHtml?.list[24].dt_txt|date:'EEE, MMM d'}}</p>
+        </div>
+      </div>
+      <div class="card text-muted text-center" style="width: 11rem; display: inline-block;">
+        <div class="card-body">
+          <h6 class="card-subtitle mb-2 ">{{weatherHtml?.list[32].weather[0].description}}</h6>
+          <img src="assets/images/{{weatherHtml?.list[32].weather[0].main}}.png" alt={{weatherHtml?.list[0].weather[0].description}} style="width:100px">
+          <h3 class="card-text">{{weatherHtml?.list[32].main.temp |number:'1.0-0'}}</h3>
+          <p class="card-text">{{weatherHtml?.list[32].dt_txt|date:'EEE, MMM d'}}</p>
+        </div>
+      </div>
+    
+</div>
+</div>

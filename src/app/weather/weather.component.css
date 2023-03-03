@@ -1,0 +1,10 @@
+.container-fluid{
+    background-color: rgb(220, 187, 144);
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.heading{
+    margin-left:135px;
+    margin-right: 130px;
+    margin-top: 50px;
+}
